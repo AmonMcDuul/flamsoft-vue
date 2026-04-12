@@ -1,0 +1,25 @@
+$color-bg-start: #ffffff;
+$color-bg-end: #f8fafc;
+$color-text-primary: #1e293b;
+$color-text-secondary: #64748b;
+$color-text-muted: #94a3b8;
+$color-accent: #a3b8c1;
+$color-accent-hover: #8ea3ad;
+$color-border-light: #f0f2f5;
+$color-white: #ffffff;
+
+$shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+$shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+$shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+$transition-smooth: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+$transition-panel: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+$header-height: 80px;
+$scroll-offset: 90px;
