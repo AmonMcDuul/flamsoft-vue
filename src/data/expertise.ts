@@ -9,24 +9,24 @@ export const expertiseItems: ExpertiseItem[] = [
     icon: "◐",
     title: "Responsive websites & webapplicaties",
     description:
-      "Van simpele landingspagina’s tot complexe webapplicaties. Altijd geoptimaliseerd op elk apparaat, snel en veilig.",
+      "Van landingspagina’s tot volledige webapplicaties. Werkt gewoon goed op mobiel, tablet en desktop. Snelle laadtijden, duidelijke structuur en gebouwd met moderne technieken zodat het ook over een paar jaar nog onderhoudbaar is.",
   },
   {
     icon: "▦",
     title: "Dashboards, data-conversie & data-analyse",
     description:
-      "Data omzetten naar heldere, interactieve dashboards. Real-time inzichten, exports en data conversies.",
+      "Ruwe data omzetten naar iets bruikbaars. Denk aan dashboards met real-time inzichten, exports (Excel/CSV), scripts om data te converteren of op te schonen en volledige oplossingen voor data migraties. Gericht op overzicht en praktische toepasbaarheid.",
   },
   {
     icon: "⚙",
     title: "Maatwerk oplossingen",
     description:
-      "Geen standaardwerk. Ik bouw software die perfect past bij jouw unieke wensen, processen en doelen.",
+      "Software die aansluit op hoe jij werkt, niet andersom. Of het nu gaat om interne tools, automatiseringen of complete systemen: ik bouw het rondom jouw processen, zodat het echt tijd bespaart en schaalbaar blijft.",
   },
   {
     icon: "♡",
     title: "Gedreven & met passie",
     description:
-      "Elk project krijgt dezelfde toewijding. Ik denk actief mee en ga voor kwaliteit. Elk project voldoet aan mijn standaard",
+      "Ik lever niets half af. Ik denk mee, stel kritische vragen en zorg dat het technisch klopt. Geen snelle hacks, maar oplossingen waar je op kunt bouwen en die ook op lange termijn blijven werken.",
   },
 ];

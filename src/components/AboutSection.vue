@@ -3,10 +3,11 @@
     <div class="container">
       <h2 class="about-title">Over mij</h2>
       <p class="about-text">
-        Ik ben Joran, softwareontwikkelaar en trotse oprichter van FlamSoft. Met
-        jarenlange ervaring in maatwerksoftware, moderne webapplicaties,
-        data-analyse en wat op mijn pad komt, weet ik hoe technologie impact kan
-        maken.
+        Ik ben Joran, softwareontwikkelaar uit omgeving Halsteren, Bergen op
+        Zoom. Ik ontwerp en bouw maatwerksoftware en webapplicaties, van idee
+        tot werkend product. Met een focus op duidelijke architectuur en
+        praktische oplossingen zorg ik dat software niet alleen werkt, maar ook
+        blijft werken.
       </p>
       <br />
       <p class="about-text mt-4">
