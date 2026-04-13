@@ -1,3 +1,9 @@
+import emdrImg from "@/assets/images/emdrproject.png";
+import ss2d from "@/assets/images/ss2dproject.png";
+import pvdb from "@/assets/images/pvdbproject.png";
+import st from "@/assets/images/spacetraderproject.png";
+import sw from "@/assets/images/starwatchr.png";
+
 export interface Project {
   id: string;
   title: string;
@@ -9,48 +15,48 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "starwatchr",
+    title: "StarWatchr",
+    description:
+      "Astronomie tool voor weersvoorspelling en actuele informatie over hemelverschijningen zoals het zonnestelsel, starhop kaarten, messier en caldwell objecten.",
+    image: sw,
+    tech: "Angular · WebGl · dotnet",
+    category: "Astronomy weather, solar system and dso",
+  },
+  {
     id: "emdr",
     title: "EMDR Tool",
     description:
-      "Professionele EMDR-software voor therapeuten. Real-time eye movement tracking, sessielogs en veilige dataopslag. Gebruikt door 50+ praktijken.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    tech: "React · Node · WebRTC",
+      "De EMDR Therapy Tool is speciaal ontwikkeld voor therapeuten om effectieve EMDR-sessies te kunnen uitvoeren, zowel in persoonlijke consulten als tijdens online therapie. De tool biedt een intuïtieve interface met aanpasbare parameters voor optimale behandeling.",
+    image: emdrImg,
+    tech: "Websockets · Angular · dotnet",
     category: "Therapie software",
+  },
+  {
+    id: "pvdb",
+    title: "Website GZ-psycholoog",
+    description:
+      "De website voor Praktijk van der Boom is ontworpen om zowel patiënten als verwijzers te informeren over de behandelmethoden en diensten van de praktijk. Het strakke, rustige design draagt bij aan een professionele uitstraling die vertrouwen wekt. ",
+    image: pvdb,
+    tech: "Angular · SEO · Planner",
+    category: "Website, SEO",
+  },
+  {
+    id: "spacetraders",
+    title: "SpaceTraders",
+    description:
+      "Een strategische trading game geïnspireerd op klassiekers zoals Drug Wars en Elite, waar je als ruimtehandelaar je fortuin bouwt tussen de sterren.",
+    image: st,
+    tech: "Angular · Game · Strategy",
+    category: "Browser game",
   },
   {
     id: "sketch",
     title: "Sketch App",
     description:
-      "Minimalistische tekenapp in de browser. Ondersteunt lagen, penselen, export naar PNG/SVG. Perfect voor wireframes en creatieve schetsen.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    tech: "Canvas API · JavaScript",
-    category: "Browser drawing tool",
-  },
-  {
-    id: "flow",
-    title: "Flow Dashboard",
-    description:
-      "Interactive dashboard voor bedrijfsdata. Realtime grafieken, KPI's en export naar PDF. Gebruikt door teams voor snelle inzichten.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    tech: "D3.js · React · Socket.io",
-    category: "Analytics & inzicht",
-  },
-  {
-    id: "mindful",
-    title: "Mindful Notes",
-    description:
-      "Digitale journaling app met dagelijkse prompts en stemmingtracking. Privacy-first, end-to-end encrypted.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
-    tech: "Vue · IndexedDB · PWA",
-    category: "Journaling app",
-  },
-  {
-    id: "pulse",
-    title: "Pulse Monitor",
-    description:
-      "Wearable-integratie voor hartslag en activiteit. Real-time meldingen en historische trends.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
-    tech: "Flutter · Firebase · Bluetooth LE",
-    category: "Gezondheid & wearables",
+      "Minimalistische tekenapp in de browser. Bedoeld om snel concepten te visualiseren. De tool combineert eenvoud met krachtige functies voor professioneel gebruik. ",
+    image: ss2d,
+    tech: "Canvas · Angular",
+    category: "Teken en visualisatie software",
   },
 ];

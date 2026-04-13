@@ -20,8 +20,9 @@ import AppFooter from "@/components/AppFooter.vue";
 import HeroSection from "@/components/HeroSection.vue";
 import ProjectsSection from "@/components/ProjectsSection.vue";
 import AboutSection from "@/components/AboutSection.vue";
-import ExpertiseSection from "@/components/ExpertiseSection.vue"; // 👈 import
+import ExpertiseSection from "@/components/ExpertiseSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
+import { setAlive } from "@/services/emailService"; // 👈 import
 
 let progressBar: HTMLElement | null = null;
 
@@ -34,9 +35,11 @@ const updateProgressBar = () => {
   progressBar.style.width = progress + "%";
 };
 
-onMounted(() => {
+onMounted(async () => {
   progressBar = document.getElementById("progressBar");
   window.addEventListener("scroll", updateProgressBar);
+
+  const isAlive = await setAlive();
 });
 
 onUnmounted(() => {
