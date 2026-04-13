@@ -1,22 +1,8 @@
-export interface SendEmailRequest {
-  subject: string;
-  body: string;
-}
+const API_URL = import.meta.env.VITE_API_URL;
 
 export interface SendEmailResponse {
   success: boolean;
   message?: string;
-}
-
-const API_URL = "https://js-backend-div.azurewebsites.net";
-
-export async function setAlive(): Promise<boolean> {
-  try {
-    const response = await fetch(`${API_URL}/Email/setalive`);
-    return response.ok;
-  } catch {
-    return false;
-  }
 }
 
 export async function sendEmail(
@@ -32,15 +18,25 @@ export async function sendEmail(
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ subject, body } as SendEmailRequest),
+      body: JSON.stringify({ subject, body }),
     });
 
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(errorText || "Versturen mislukt");
+      throw new Error(errorText || `HTTP ${response.status}`);
     }
 
-    const data = await response.json();
+    let data = null;
+    try {
+      data = await response.json();
+    } catch (jsonError) {
+      console.log("API returned empty or non-JSON response, assuming success");
+      return {
+        success: true,
+        message: "Bericht verzonden! Ik neem snel contact op.",
+      };
+    }
+
     return {
       success: true,
       message: "Bericht verzonden! Ik neem snel contact op.",
@@ -51,5 +47,15 @@ export async function sendEmail(
       success: false,
       message: "Er ging iets mis. Probeer het later opnieuw.",
     };
+  }
+}
+
+export async function setAlive(): Promise<boolean> {
+  try {
+    const response = await fetch(`${API_URL}/Email/setalive`);
+    return response.ok;
+  } catch (error) {
+    console.error("setAlive error:", error);
+    return false;
   }
 }
