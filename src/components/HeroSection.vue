@@ -12,7 +12,7 @@
         </button>
       </div>
       <div class="hero-image">
-        <img src="../assets/images/joran1.jpeg" alt="Hero" />
+        <img src="../assets/images/joran.png" alt="Hero" />
       </div>
     </div>
   </section>
