@@ -4,7 +4,7 @@
       <div class="hero-content">
         <h1>
           Ik bouw software<br />
-          <span class="highlight">die gewoon werkt.</span>
+          <span class="animated-word">die gewoon werkt.</span>
         </h1>
         <p>Van idee naar product. Geen gedoe, gewoon resultaat.</p>
         <button class="btn-soft" @click="scrollToProjects">
@@ -68,10 +68,6 @@ const scrollToProjects = () => {
       @media (min-width: $breakpoint-md) {
         font-size: 4.5rem;
       }
-
-      .highlight {
-        color: $color-text-muted;
-      }
     }
 
     p {
@@ -99,6 +95,45 @@ const scrollToProjects = () => {
         transform: scale(1.02);
       }
     }
+  }
+
+  .animated-word {
+    display: inline-block;
+    background: linear-gradient(120deg, #4a5b66, #a3b8c1, #4a5b66);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: softGradient 4s ease infinite;
+
+    @keyframes softGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+
+  @keyframes softPulse {
+    0%,
+    100% {
+      opacity: 0.8;
+      text-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 6px rgba(163, 184, 193, 0.2);
+    }
+  }
+  .animated-word {
+    animation:
+      softGradient 10s ease infinite,
+      softPulse 3s ease-in-out infinite;
   }
 }
 </style>
