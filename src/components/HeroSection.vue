@@ -98,7 +98,6 @@ const scrollToProjects = () => {
   }
 
   .animated-word {
-    display: inline-block;
     background: linear-gradient(120deg, #4a5b66, #a3b8c1, #4a5b66);
     background-size: 200% auto;
     background-clip: text;
