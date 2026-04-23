@@ -6,7 +6,7 @@
           Ik bouw software<br />
           <span class="animated-word">die gewoon werkt.</span>
         </h1>
-        <p>Van idee naar product. Geen gedoe, gewoon resultaat.</p>
+        <!-- <p>Van idee naar product. Geen gedoe, gewoon resultaat.</p> -->
         <button class="btn-soft" @click="scrollToProjects">
           Bekijk projecten →
         </button>
