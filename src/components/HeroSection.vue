@@ -3,7 +3,7 @@
     <div class="container">
       <div class="hero-content">
         <h1>
-          Ik bouw software<br />
+          Software<br />
           <span class="animated-word">die gewoon werkt.</span>
         </h1>
         <!-- <p>Van idee naar product. Geen gedoe, gewoon resultaat.</p> -->
